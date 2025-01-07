@@ -1,0 +1,11 @@
+nltk==3.8.1
+faiss-cpu 
+sentence_transformers
+openai
+groq
+streamlit
+pypdf
+libsass    
+
+langchain_community
+langchain_huggingface
