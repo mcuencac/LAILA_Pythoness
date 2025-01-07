@@ -1,0 +1,381 @@
+// Variables
+:root {
+    --white-color: #f9f6f6;
+    --transparent-bg: rgba(0, 0, 0, 0.35);
+    --primary-bg: rgba(33, 39, 80, 0.8);
+    --primary-bg-95: rgba(33, 39, 80, .96);
+    --primary-color: #19d7ba;
+    --secondary-color: rgba(255, 255, 255, 0.3);
+    --terthiary-color: rgba(255, 255, 255, 0.6);
+    --angle: 60deg;
+    --gradient-bg: linear-gradient(var(--angle), rgb(30, 75, 2) 0%, rgba(33, 6, 88, 1) 33%, rgb(16, 21, 82) 68%, rgb(150, 5, 97) 100%);
+    --gradient-bg2: linear-gradient(#0000009e, #52006c52) padding-box, linear-gradient(rgba(78, 42, 5, .49) 0%, rgba(53, 0, 62, .37) 33%, #2f056900 60%) border-box;
+    --font-awesome: 'Font Awesome 5 Free';
+    --hover-transition: all 0.3s linear;
+    --border-radius: 10px;
+}
+
+// Estilo general
+body, h1 {
+    color: var(--white-color);
+}
+h2 {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+em {
+    color: #fff7ba;
+    font-size: .95em;
+    opacity: .9;
+}
+
+header {
+    &.stAppHeader {
+        background: transparent;
+    }
+}
+
+.stAppToolbar {
+    background: var(--primary-bg);
+    border-radius: var(--border-radius);
+    padding: 6px 5px;
+    color: var(--white-color);
+}
+
+// .stSpinner {
+//     position: fixed;
+//     top: 0;
+//     z-index: 3;
+//     > div {
+//         height: 50vh;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//     }
+//     i{
+//         background: var(--gradient-bg2);
+//         border-radius: 100%;
+//         border: 2px solid transparent;
+//         width: 9vw;
+//         height: 9vw;
+//     }
+// }
+
+// img {
+//     &[alt="Running..."] {
+//         background: white;
+//         border-radius: 5px;
+//         padding: 5px;
+//     }
+// }
+@keyframes appear {
+    0% {
+        // background-position: 0% -100%;
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        // background-position: 0% 0%;
+    }
+}
+
+.stVerticalBlock {
+    &.st-key-header {
+        position: fixed;
+        top: 0;
+        z-index: 3;
+        height: 50vh;
+        max-height: 100%;
+        width: 75rem;
+        background-size: cover;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+    }
+    @keyframes gradient {
+        0% {
+        background-position: 100% 100%;
+        }
+        50% {
+        background-position: 0% 0%;
+        }
+        100% {
+        background-position: 0% 0%;
+        }
+    }
+    &.st-key-ofended {
+        p {
+            font-size: 0.8em;
+            color: #f58c8c;
+            padding-left: 2.3rem;
+        }
+    }
+}
+
+[data-testid="stChatMessage"] {
+    &:nth-of-type(even) {
+        flex-direction: row-reverse;
+        text-align: right;
+        background: #28036e42;
+        padding: 1rem;
+        margin: 0 3rem;
+    }
+    > img {
+        width: 3rem;
+        height: 3rem;
+        flex-shrink: 0;
+        border-radius: 100%;
+        object-fit: cover;
+        display: flex;
+    }
+}
+
+.stMain {
+    width: 75rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 2;
+    background-color: var(--transparent-bg);
+    box-shadow: 0 0 200px #d788432e;
+    height: 100vh;
+    padding: 50vh 0 0 0;
+    // animation: appear 15s ease;
+    // animation-iteration-count: 1;
+}
+
+.stBottom {
+    > div {
+        background: transparent;
+    }
+}
+
+[data-testid="stMarkdownContainer"] {
+    color: var(--white-color);
+}
+
+.stAppViewContainer {
+    background: var(--gradient-bg);
+    box-shadow: inset 0px 0px 600px rgba(0, 0, 0, 1);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    background-attachment: fixed;
+    > * {
+        position: absolute;
+        transition: all 0.3s linear;
+    }
+    * {
+        transition: all .3s ease-in-out;
+        interpolate-size: allow-keywords;
+    }
+    &:before {
+        display: block;
+        width: 200vw;
+        height: 200vw;
+        content: "";
+        background: linear-gradient(200deg, rgb(255, 0, 64) 0%, rgb(47, 0, 66) 50%, rgb(0, 255, 51) 100%);
+        position: fixed;
+        top: -50vw;
+        left: -50vw;
+        opacity: .3;
+        box-shadow: inset 0px 0px 600px rgba(0, 0, 0, 1);
+        animation: animateAngle 27s infinite ease-in-out;
+        will-change: transform;
+        z-index: 1;
+    }
+    &:after {
+        display: block;
+        width: 200vw;
+        height: 200vw;
+        content: "";
+        background: #000;
+        position: fixed;
+        top: -50vw;
+        left: -50vw;
+        opacity: 1;
+        box-shadow: inset 0px 0px 600px rgba(0, 0, 0, 1);
+        pointer-events: none;
+        animation: animateOpacity 15s infinite ease-in-out;
+        z-index: 1;
+    }
+}
+
+@keyframes animateAngle {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        opacity: .1;
+    }
+    100% {
+        transform: rotate(360deg);
+        opacity: .3;
+    }
+}
+
+@keyframes animateOpacity {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.stMainBlockContainer {
+    &.block-container{
+        max-width: 100%;
+        padding: 0 0 3rem 0;
+    }
+}
+
+.stBottom [data-testid="stBottomBlockContainer"] {
+    max-width: 100%;
+    padding: 0 0 3rem 0;
+}
+@keyframes appear-message {
+    0% { 
+        opacity: 0;
+        transform: translateY(50px);
+     }
+    100% { 
+        opacity: 1;
+        transform: translateY(0); 
+    }
+}
+
+
+.stChatMessage {
+    padding: 1rem 3rem;
+    &:last-child{
+        opacity: 0;
+        animation: appear-message 1s ease-in-out 1; /* La animación dura 2 segundos y se ejecuta solo una vez */
+        animation-iteration-count: 1; 
+        animation-fill-mode: forwards; 
+    }
+    
+}
+
+[data-testid="stChatInput"] {
+    background: #28036e50;
+    margin: 0 2vw;
+    width: calc(100% - 4vw);
+    textarea{
+        color: var(--white-color);
+    }
+}
+
+[placeholder] {
+    &::placeholder {
+        color: var(--terthiary-color);
+        font-weight: 300;
+        opacity: 1;
+    }
+}
+
+[data-baseweb="base-input"]{
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+
+[data-baseweb="textarea"]{
+    border: none;
+    background: none;
+    width: 100% !important;
+    max-width: 100%;
+    [data-baseweb="base-input"] textarea {
+        background: none;
+        border: none;
+        transition: var(--hover-transition);
+        caret-color: var(--primary-color);
+        caret-shape: underscore;
+    }
+}
+
+[data-testid="stNumberInputContainer"],
+[data-baseweb="input"] [data-baseweb="base-input"] input:not([type="number"]) {
+    background: var(--transparent-bg);
+    border: none;
+    border-radius: var(--border-radius);
+    color: var(--white-color);
+}
+
+[data-baseweb="select"] > div {
+    background: var(--transparent-bg);
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    color: var(--white-color);
+}
+
+[data-testid="stNumberInputStepDown"]:hover,
+[data-testid="stNumberInputStepUp"]:hover,
+[data-testid="stNumberInputStepDown"]:focus,
+[data-testid="stNumberInputStepUp"]:focus {
+    background-color: var(--primary-color) !important;
+}
+
+[data-baseweb="tab-border"] {
+    background-color: var(--primary-color);
+    opacity: 0.1;
+}
+
+.stButton {
+    button {
+        &[kind="secondary"] {
+            background: rgba(30, 50, 50, 0.3);
+            border: 1px solid var(--secondary-color);
+            transition: var(--hover-transition);
+            &:hover {
+                background: rgba(30, 30, 30, 0.3);
+                border-color: var(--primary-color);
+                color: var(--primary-color);
+            }
+            &:active {
+                color: var(--white-color);
+                border-color: var(--primary-color);
+                background-color: var(--primary-color);
+            }
+            &:focus-visible {
+                box-shadow: var(--primary-color) 0px 0px 0px 0.2rem;
+            }
+            &:focus:not(:active) {
+                border-color: var(--primary-color);
+                color: var(--primary-color);
+            }
+        }
+    }
+}
+
+[data-baseweb="checkbox"] span {
+    background-color: var(--primary-color);
+    border: 3px solid var(--primary-color);
+}
+
+h3, h4, label[data-testid="stMetricLabel"] p {
+    font-weight: bold;
+    color: var(--white-color);
+}
+
+label, p, ul, li {
+    color: var(--white-color);
+}
+
+[data-baseweb="popover"] {
+    background: var(--primary-bg-95);
+    ul[role="option"]{
+        li{
+            background: var(--primary-bg-95);
+            &:hover {
+                background: var(--transparent-bg);
+            }
+        }
+        
+    }
+
+    > div {
+        background: transparent;
+    }
+}

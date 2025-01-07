@@ -1,0 +1,68 @@
+# Estructura de la Pirámide Invertida
+La tirada se compone de **6 cartas** dispuestas en forma de pirámide hacia abajo. La disposición es la siguiente:
+
+```
+   1   2   3
+      4   5
+         6
+```
+
+- **Fila 1 (Cartas 1, 2, 3):** La base del problema, el pasado o las influencias iniciales que te trajeron hasta el momento presente.
+- **Fila 2 (Cartas 4, 5):** El presente, la situación actual y las energías que predominan en este instante.
+- **Carta 6 (Pico):** El desenlace, el futuro probable si las energías se mantienen en esta dirección.
+
+Cada bloque se interpreta teniendo en cuenta las cartas adjacentes y su interpretacion segun el contexto de convinaciones. (3 cartas, 2 cartas, 1 carta)
+
+---
+
+## Estructura Detallada de Cada Carta
+
+### Carta 1 - La raíz del problema (Pasado):
+Esta carta representa el **origen de la situación** que consultas. Es el punto inicial, donde todo comenzó. Puede reflejar eventos pasados, personas o emociones que sembraron la semilla de lo que vives ahora.  
+**Clave:** ¿Qué acciones o influencias te trajeron hasta aquí?
+
+---
+
+### Carta 2 - Influencias del pasado:
+Aquí se muestran otras energías importantes del **pasado** que han moldeado tu camino. Pueden ser decisiones que tomaste, obstáculos enfrentados o relaciones que tuvieron un papel clave.  
+**Clave:** ¿Qué elementos del pasado aún influyen en tu presente?
+
+---
+
+### Carta 3 - La base emocional (Pasado):
+Esta carta revela el **estado emocional o espiritual** que surgió a raíz de los eventos anteriores. Es el **sentimiento subyacente** que te acompañó y que podría estar inconscientemente afectando tu situación actual.  
+**Clave:** ¿Qué emociones o pensamientos arraigados condicionan tu vida ahora?
+
+---
+
+### Carta 4 - El presente (Situación actual):
+Aquí está la carta que ilumina tu **momento actual**. Representa lo que ocurre ahora mismo: las circunstancias visibles, las energías predominantes y los desafíos o apoyos que te rodean.  
+**Clave:** ¿Dónde te encuentras ahora? ¿Qué fuerzas actúan a tu favor o en tu contra?
+
+---
+
+### Carta 5 - Influencias actuales:
+Esta carta muestra los factores **externos o internos** que influyen en tu presente. Pueden ser personas, eventos o incluso tus propios pensamientos y creencias que actúan sobre la situación.  
+**Clave:** ¿Qué influencias están moldeando tu presente? ¿Son útiles o limitantes?
+
+---
+
+### Carta 6 - El desenlace (Futuro probable):
+Ah, el **pico de la pirámide**, la carta que revela el **futuro probable** si sigues en esta dirección. Aquí se muestra el destino que se está tejiendo en tu camino. No olvides que el tarot **no es sentencia**; es una guía, y este futuro puede cambiar si tú cambias tus acciones o tu perspectiva.  
+**Clave:** ¿Qué resultado puedes esperar si no modificas nada?
+
+---
+
+## Resumen del Proceso de Interpretación
+- Las **Cartas 1, 2 y 3** te anclan al **pasado**, explicando cómo llegaste aquí y qué emociones o circunstancias te afectan todavía.  
+- Las **Cartas 4 y 5** iluminan el **presente**, mostrando el ahora y las fuerzas que lo moldean.  
+- La **Carta 6** lanza luz sobre el **futuro probable**, dándote claridad sobre el desenlace.
+
+---
+
+## Cuándo usar esta tirada:
+La **pirámide invertida de 6 cartas** es ideal cuando quieres:
+
+- **Explorar una situación compleja:** Te permite ver cómo ha evolucionado y hacia dónde va.
+- **Comprender el pasado, presente y futuro de un tema:** Ofrece claridad en todos los niveles.
+- **Tomar decisiones conscientes:** Al conocer el desenlace probable, puedes elegir cambiar tu enfoque o tus acciones.
